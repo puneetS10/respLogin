@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginform{
+    width: 30%;
+    max-width: 80%;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+/* .loginform::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.09);
+    height: 100%;
+    width: 50%;
+    border-radius: 35px;
+    pointer-events: none;
+} */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 10%;
+    /* letter-spacing: 2px; */
+}
+.heading i{
+    font-size: 1.2rem;
+}
+.box{
+    width: 100%;
+    margin-bottom: 1%;
+}
+.box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid #0984e3;
+    font-size: 1.1rem;
+}
+.box input::placeholder{
+    color: white;
+    opacity: 0.4;
+}
+.btn{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 4px 16px;
+    margin: 10px;
+    border: 2px solid #0984e3;
+    border-radius: 8px;
+    outline: none;
+}
+.btn:hover{
+    background-color: #0984e3;
+    border: 2px solid white;
+}
+@media (max-width:800px){
+    .loginform{
+        width: 50%;
+    }
+}
+@media (max-width:500px){
+    .loginform{
+        width: 80%;
+    }
+}
